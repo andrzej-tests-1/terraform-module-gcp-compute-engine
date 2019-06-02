@@ -16,7 +16,6 @@ resource "google_compute_instance" "default" {
     subnetwork = "${var.subnetwork}"
 
     access_config {
-      nat_ip = "${google_compute_address.default.address}"
     }
   }
 
